@@ -11,3 +11,7 @@ updates:
           - "*"  # Group all Actions updates into a single larger pull request
     schedule:
       interval: daily
+  - package-ecosystem: swift
+    directory: /
+    schedule:
+      interval: daily
