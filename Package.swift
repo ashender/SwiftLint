@@ -34,7 +34,7 @@ let package = Package(
         .package(url: "https://github.com/jpsim/Yams.git", "5.0.6"..."6.1.0"),
         .package(url: "https://github.com/scottrhoyt/SwiftyTextTable.git", from: "0.9.0"),
         .package(url: "https://github.com/JohnSundell/CollectionConcurrencyKit.git", from: "0.2.0"),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMinor(from: "1.8.0")),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", "1.8.0"..."2.0.0")),
     ],
     targets: [
         .plugin(
