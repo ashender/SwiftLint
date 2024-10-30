@@ -35,7 +35,7 @@ let package = Package(
         .package(url: "https://github.com/scottrhoyt/SwiftyTextTable.git", from: "0.9.0"),
         .package(url: "https://github.com/JohnSundell/CollectionConcurrencyKit.git", from: "0.2.0"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", "1.8.0"..."2.0.0"),
-        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", exact:"6.7.0"),
+        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", exact:"7.1.1"),
         .package(url: "https://github.com/braze-inc/braze-swift-sdk", "9.0.0" ..< "1000.0.0"),
     ],
     targets: [
