@@ -17,4 +17,5 @@ updates:
       interval: daily
     open-pull-requests-limit: 100
     ignore:
-      - dependency-name: "*SensorsData*"
+      - dependency-name: "*sensorsdata*"
+      - dependency-name: "*sf-sdk-ios*"
