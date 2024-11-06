@@ -12,7 +12,7 @@ updates:
     schedule:
       interval: daily
   - package-ecosystem: swift
-    directory: /
+    directory: "**/*"
     schedule:
       interval: daily
     open-pull-requests-limit: 100
