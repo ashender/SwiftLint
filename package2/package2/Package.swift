@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftLint",
+    name: "package2",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SwiftLint",
-            targets: ["SwiftLint"]),
+            name: "package2",
+            targets: ["package2"]),
     ],
     dependencies: [
       .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "6.7.0")
@@ -18,10 +18,10 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SwiftLint", dependencies: ["ReactiveSwift"]),
+            name: "package2", dependencies: ["ReactiveSwift"]),
         .testTarget(
-            name: "SwiftLintTests",
-            dependencies: ["SwiftLint"]
+            name: "package2Tests",
+            dependencies: ["package2"]
         ),
     ]
 )
