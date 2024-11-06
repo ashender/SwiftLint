@@ -36,7 +36,7 @@ let package = Package(
         .package(url: "https://github.com/JohnSundell/CollectionConcurrencyKit.git", from: "0.2.0"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", "1.8.0"..."2.0.0"),
         .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", exact:"6.7.0"),
-        .package(url: "https://github.com/braze-inc/braze-swift-sdk", from: "9.0.0"),
+        .package(url: "https://github.com/braze-inc/braze-swift-sdk", .upToNextMinor(from: "9.0.0")),
     ],
     targets: [
         .plugin(
