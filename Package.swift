@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
       .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "6.7.0"),
-      .package(url: "https://github.com/braze-inc/braze-swift-sdk", from: "11.2.0"),
+      .package(url: "https://github.com/braze-inc/braze-swift-sdk", exact: "11.2.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
