@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Parse checksum
         id: parse_checksum
         run: echo "checksum=$(grep -o '[a-fA-F0-9]\{64\}' Package.swift)" >> $GITHUB_OUTPUT
@@ -34,7 +34,7 @@ jobs:
     needs: trigger-docker
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Upload binary to existing release
         run: make zip_linux_release
         env:
@@ -42,7 +42,7 @@ jobs:
   publish-pod:
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Retrieve author in uppercase
         id: retrieve_author
         run: |
