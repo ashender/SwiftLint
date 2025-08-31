@@ -12,7 +12,7 @@ let package = Package(
             targets: ["SwiftLint"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "6.7.0"),
+      .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "7.2.1"),
       .package(url: "https://github.com/braze-inc/braze-swift-sdk", exact: "11.2.0"),
     ],
     targets: [
